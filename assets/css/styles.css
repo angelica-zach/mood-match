@@ -1,3 +1,15 @@
+:root{
+--dgreen:#8D9660;
+--sage:#9C9F7F;
+--red:#64150C;
+--blue:#AEB5C1;
+--font:"andale mono",monospace;
+}
+
+.navbar h2{
+
+  font-style: italic;
+}
 #moodCards {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +17,7 @@
   align-items: center;
   margin: 20px auto; 
   max-width: 80%; 
+  background-color: var(--blue);
 }
 
 #artist{
@@ -28,7 +41,7 @@
 body, h1, h2, h3, p, ul {
   margin: 1px;
   padding: 1px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:var(--font);
 }
 
 #moodPlaylistsContainer h3 {
@@ -38,15 +51,17 @@ body, h1, h2, h3, p, ul {
 body{
  background-color: white;
 }
-.navbar{
-  color:  #800000;
-}
+
 .navbar-brand{
   font-stretch: expanded;
   margin-left: 15px;
 }
 
   
+#songs {
+  background-color: var(--sage);
+}
+
 /* Custom CSS for improving carousel arrow buttons visibility */
 .carousel-control-prev, .carousel-control-next {
   font-size: 0.5rem;
