@@ -1,0 +1,128 @@
+#moodCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; 
+  max-width: 80%; 
+}
+
+#artist{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#venues{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body, h1, h2, h3, p, ul {
+  margin: 1px;
+  padding: 1px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#moodPlaylistsContainer h3 {
+  color: white;
+}
+
+body{
+ background-color: white;
+}
+.navbar{
+  color:  #800000;
+}
+.navbar-brand{
+  font-stretch: expanded;
+  margin-left: 15px;
+}
+
+  
+/* Custom CSS for improving carousel arrow buttons visibility */
+.carousel-control-prev, .carousel-control-next {
+  font-size: 0.5rem;
+  color: #ffffff; /* Color for the arrows */
+  background: linear-gradient(to right, rgba(183, 52, 122, 0.4), rgba(0, 0, 0, 0));
+  border: 0.5px solid #ffffff; 
+  border-radius: 40%; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  color: #b8078c; /* Darken the color on hover */
+  background: linear-gradient(to right, rgba(235, 213, 161, 0.7), rgba(0, 0, 0, 0)); /* Darken the gradient on hover */
+}
+
+/* Adjust the position of the arrows */
+.carousel-control-prev {
+  left: -10px; /* Adjust the left position */
+}
+
+.carousel-control-next {
+  right: -10px; /* Adjust the right position */
+}
+  
+/* Animation for fadeInUp */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  button {
+    color: #f3d7bc;
+    border: none;
+    padding: 30px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  button:hover {
+    background-color: #fcfbfb;
+  }
+
+  .moo
+  .mood-player-container {
+    border-radius: 1rem;
+    box-shadow: 0px 10px 30px rgba(219, 52, 235);
+}
+
+#moodPlaylistsContainer .playlist-item {
+  width: 100%;
+  max-width: 20%; /* Set max-width to allow up to 5 containers in a row */
+  margin-bottom: 20px;
+}
+
+#moodPlaylistsContainer img {
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#moodPlaylistsContainer img:hover {
+  transform: scale(1.1);
+}
+
+.span-text {
+  margin: 1px;
+  padding: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #800000;
+}
+

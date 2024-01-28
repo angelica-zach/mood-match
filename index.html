@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mood-App</title>
+  <!-- Bootstrap CSS CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <nav class="navbar bg-body-tertiary">
+      <a class="navbar-brand" href="#moodCards">
+        <img src="./assets/images/MoodMatch Logo large.png" alt="Bootstrap" width="220" height="100">
+      </a>
+  </nav>
+
+  <div id="moodCards">
+    <div id="moodCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <!-- EACH ELEMENT WRAPPED IN <a> -->
+        <a href="songs.html">
+          <div class="carousel-item active">
+            <button id="calm">
+              <img src="./assets/pictures/Calm.png" class="d-block mx-auto img-fluid" alt="calm">
+            </button>
+
+          </div>
+          <div class="carousel-item">
+            <button id="chill">
+              <img src="./assets/pictures/Chilled Sexy Vibes.png" class="d-block mx-auto img-fluid" alt="chill">
+            </button>
+
+          </div>
+          <div class="carousel-item" >
+            <button id="concentrate">
+              <img src="./assets/pictures/Concentrate.png" class="d-block mx-auto img-fluid" alt="concentrate">
+            </button>
+
+          </div>
+          <div class="carousel-item">
+            <button id="energised">
+              <img src="./assets/pictures/Energised.png" class="d-block mx-auto img-fluid" alt="energised">
+            </button>
+
+          </div>
+          <div class="carousel-item" >
+            <button id="euphoric">
+              <img src="./assets/pictures/Euphoric.png" class="d-block mx-auto img-fluid" alt="euphoric">
+            </button>
+
+          </div>
+          <div class="carousel-item">
+            <button id="groovy">
+              <img src="./assets/pictures/Groovy.png" class="d-block mx-auto img-fluid" alt="groovy">
+            </button>
+
+          </div>
+          <div class="carousel-item">
+            <button id="nostalgic">
+              <img src="./assets/pictures/Nostalgic.png" class="d-block mx-auto img-fluid" alt="nostalgia">
+            </button>
+
+          </div>
+          <div class="carousel-item">
+            <button id="random">
+              <img src="./assets/pictures/Random.png" class="d-block mx-auto img-fluid" alt="random">
+            </button>
+
+
+          </div>
+        </a>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#moodCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#moodCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">No Upcoming Tours Found</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Sorry, this artist isn't touring right now
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <footer class="text-center text-white w-100" style="background-color: #21081A;">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://github.com/angelica-zach/Mood-App">pacts</a>
+    </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/tourdates.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+
+</html>
+
