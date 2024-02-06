@@ -13,7 +13,7 @@
 
 MoodMatch is a web application that helps users discover music playlists based on their mood, provides information about venues related to the artists in the playlist, and suggests activities in the area.The mood is picked from a  carousel of possible mood cards , and is then linked to a spotify API to match this to music . This then links to BandsInTown API to show music for this artist
 
-URL of deployed app:  https://angelica-zach.github.io/Mood-App/
+URL of deployed app:  https://angelica-zach.github.io/mood-match/
 
 ## Features
 
